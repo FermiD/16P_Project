@@ -12,12 +12,9 @@ using namespace std;
 // A function to validate user's input.
 bool validateAnswer(string answer){
 	string acceptableAnswers[3] = {"a", "b", "c"};
-	for (int i = 0; i < 3; i++)
-    {
+	for (int i = 0; i < 3; i++){
         if (answer == acceptableAnswers[i])
-        {
-            return true;
-        }
+        	return true;
     }
     return false;
 }
@@ -87,7 +84,7 @@ int main(){
 			break;
 		}
 		else{
-			cout << "Invalid answer." << endl;
+			cout << "Invalid answer." << endl << endl;
 		}
 	} while (!validateAnswer(userAnswer));
 	
@@ -116,7 +113,7 @@ int main(){
 			break;
 		}
 		else{
-			cout << "Invalid answer." << endl;
+			cout << "Invalid answer." << endl << endl;
 		}
 	} while(!validateAnswer(userAnswer));
 	
@@ -145,7 +142,7 @@ int main(){
 			break;
 		}
 		else{
-			cout << "Invalid answer." << endl;
+			cout << "Invalid answer." << endl << endl;
 		}
 	} while (!validateAnswer(userAnswer));
 	
@@ -174,7 +171,7 @@ int main(){
 			break;
 		}
 		else{
-			cout << "Invalid answer." << endl;
+			cout << "Invalid answer." << endl << endl;
 		}
 	} while(!validateAnswer(userAnswer));
 	
